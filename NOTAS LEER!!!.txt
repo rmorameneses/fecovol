@@ -1,0 +1,21 @@
+solicitudRegistroAleta.php
+
+Falta lo de equipos que no se porque lo quito 
+
+atletaInfo.php
+
+agregar la relgion (creo que tambien hay que agregarlo a la bd)
+
+agregar a la db un telefono de habitación, además del celular 
+agregar a la db un centro educativo y un grado para atleta
+y un encargado de emergencia junto con el telefono
+
+HAGA  UNA TABLA ATLETA! no entiendo por qué no hay una tabla atleta es necesaria. 
+
+agregar lateralidad a la base de datos (bd)
+también agregar estatura abuelo y abuela, padre y madre
+
+
+hay que agregar un historial de formularios con las opciones del formulario 
+
+agregar 2do apellido a la base y al html

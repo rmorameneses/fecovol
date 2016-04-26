@@ -1,0 +1,36 @@
+<!--  archivo php que revisa el logueado -->
+
+<html>
+<head>
+<title>Log-in</title>
+</head>
+<body>
+<?php
+session_start();
+$conexion=mysql_connect("localhost","root","root") or die("Problemas en la conexion");
+mysql_select_db("mydb",$conexion) or die("Problemas en la seleccion de la base de datos");
+
+$usuario= strip_tags($_POST['user']);
+$password= sha1(strip_tags($_POST['pass']));
+$query = mysql_query('CALL CheckPassword("'.$usuario.'","'.$password.'");') or die ("problema al llamar el SP");
+$entro=@mysql_fetch_row($query);
+
+if($entro[0]==1)
+{
+	$_SESSION['logueado']="yes";
+	$_SESSION['usuario']=$usuario;
+	$_SESSION['vengode']="login";
+	echo"<META HTTP-EQUIV='REFRESH' CONTENT='1;URL=http://localhost/homepage/solicitudRegistro.html'> " ;
+}
+else
+{
+	$_SESSION['logueado']="no";
+	$_SESSION['usuario']="";
+	$_SESSION['vengode']="login";
+	echo"<META HTTP-EQUIV='REFRESH' CONTENT='1;URL=http://localhost/'> " ;
+}
+
+mysql_close($conexion);
+?>
+</body>
+</html>

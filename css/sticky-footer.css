@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    padding-top: 50px;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 20px;    
+    left: 50%;
+    height: 14px;
+    margin-left: -10px;
+}
+
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;    
+    background-color: #333;
+    box-shadow: 0 5px 0 #333, 0 10px 0 #333;
+}
+
+.menu {
+    display: none; 
+    width: 100%;
+    padding: 30px 10px 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+.menu ul {
+    margin-bottom: 0;
+}
+.menu a {
+    color: #333; 
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.menu a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.nav-tabs{
+   border-bottom:none;
+   display: inline-block;
+}
+
+.nav-tabs a{
+   color:#FFF;
+}
+
+.panel-group {
+  padding-top: 50px;
+}
+.panel-default {
+  border-radius: 0;
+  border: none;
+  background: none;
+  margin-bottom: 0;
+  padding-bottom: 14px;
+}
+.panel-default > .panel-heading {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border: none;
+  padding: 0 0 0 32px;
+}
+.panel-default h5 {
+  font: 300 19px "Open Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0 0 5px;
+}
+.panel-group .panel+.panel {
+  margin-top: 15px;
+}
+.panel-default .accordion-toggle:before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: #f80f08 url(http://keenthemes.com/assets/bootsnipp/toggle-icons.png) no-repeat 6px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+.panel-default .collapsed:before {
+  background: #495764 url(http://keenthemes.com/assets/bootsnipp/toggle-icons.png) no-repeat 6px -148px;
+}
+.panel-default .panel-title:hover .collapsed:before {
+  background-color: #f80f08;
+}
+.panel-default .accordion-toggle,
+.panel-default .accordion-toggle:focus,
+.panel-default .accordion-toggle:hover,
+.panel-default .accordion-toggle:active {
+  color: #1ea9e3;
+  text-decoration: none;
+}
+.panel-default .collapsed {
+  color: #5f6f7e;
+}
+
+.button1
+{
+    text-align:center;
+}
+
+.button2
+{
+    text-align:center;
+}
+
+.modal-dialog {
+margin: 0px auto;
+}
+
+.modal-backdrop.fade {
+opacity: 0.1;
+filter: alpha(opacity=0.1);
+}
+
+.modal-content {
+position: relative;
+background-color: #FFF;
+border: 1px solid #CECECE;
+border-radius: 0px;
+-webkit-box-shadow:none; 
+ box-shadow: none;
+background-clip: padding-box;
+outline: 0;
+}
+
+
+.modal-header {
+    padding: 11px 15px;
+	background-color: #F8F8F8;
+background: -webkit-linear-gradient(top, #F8F8F8, #F2F2F2);
+background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+background: linear-gradient(top, #f8f8f8, #f2f2f2);
+}
+
+.center-block {float: none !important}
+
+
+/*----- Tabs -----*/
+
+
+ul.tab-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+   /* li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+        

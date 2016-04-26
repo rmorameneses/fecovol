@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/inicio.css"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">    
+    </head>
+    <body>     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="http://www.fecovol.co.cr/templates/fecovol33/images/object1220940431.png" alt="logo">
+            </div>
+        </div>
+    </div>   
+    <div class="container">
+        <br><br><br><br><br>
+        <form method="post" class="form-signin" action="http://localhost/login/index.php">
+            <h2 class="form-signin-heading">Iniciar Sesión</h2>
+            <input type="text" name="user" class="form-control" placeholder="Correo electrónico o nombre usuario" autofocus> <br>
+            <input type="password"  name="pass" class="form-control" placeholder="Contraseña">
+            
+			<button class="btn btn-info btn-lg btn-primary btn-block" type="submit">Log-in</button>
+        </form>
+        
+    
+            
+    </div>    
+     <div class="col-md-3 "></div>
+         
+          <div class="col-md-7 "><br> <br><br><br><br><br><br>
+                 <h>Nota:  Esta página web es de uso exclusivo para miembros de la FECOVOL (Federación costarricense de voleibol), la solicitud de registro será aprobada únicamente para gente ya miembro</h>
+
+            <br>
+            </div>
+          
+           <div class="col-md-2 "></div>
+    </body>
+</html>
